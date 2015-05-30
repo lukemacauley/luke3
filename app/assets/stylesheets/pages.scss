@@ -2,13 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+* {
+	margin: 0;
+}
+
 html {
 	font-size: 10px;
 	height: 100%;
 }
 
 body {
-	position: relative;
 	width: 100%;
 	height: 100%;
 	background-color: #fff;
@@ -16,8 +19,8 @@ body {
 	font-family: "proxima-nova",serif;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 1.1em; // 1.4em = 14px;
-	line-height: 1.5em;
+	font-size: 1em; // 1.4em = 14px;
+	line-height: 1.2em;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
@@ -36,6 +39,10 @@ a {
 	color: #000;
 }
 
+h1 {
+	font-size: 1.1em;
+}
+
 header {
 	position: absolute;
 	top: 25px;
@@ -43,6 +50,7 @@ header {
 	width: 100%;
 	z-index: 10;
 	margin-bottom: 0;
+	font-size: 1.1em;
 	ul.center {
 		text-align: center;
 		width: 30%;
@@ -67,6 +75,7 @@ header {
 	left: 30px;
 	width: 170px;
 	z-index: 10;
+	font-size: 1.1em;
 	ul.shop-menu-1 {
 		li {
 			margin-bottom: 20px;
@@ -98,19 +107,208 @@ header {
 	}
 }
 
-#home-feed {
-	position: relative;
-	top: 150px;
-	left: 200px;
+.wrapper {
+	min-height: 100%;
+	margin: 0 auto -50px;
+}
+
+footer {
 	width: 100%;
+	z-index: 10;
+	height: 50px;
+	font-size: 1.1em;
+	ul.center {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		li {
+			display: inline;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+	}
+}
+
+.push {
+	height: 50px;
+}
+
+#home-feed {
+	width: 100%;
+	margin: 0;
+	padding: 0;
 	img {
 		vertical-align: bottom;
 	}
 	#feed1 {
-		position: absolute;
-		width: 1035px;
+		margin-top: 150px;
+		margin-left: 200px;
+		width: 75%;
+		margin-right: auto;
 	}
 	#feed2 {
-		width:500px;
+		width: 44%;
+		margin-right: 2%;
+		margin-left: 54%;
+	}
+	#feed3 {
+		width: 44%;
+		margin-left: 10%;
+		margin-right: 45%
+	}
+	#feed4 {
+		width: 36%;
+		margin-left: 56%;
+		margin-right: 8%;
+		margin-top: 120px;
+	}
+	#feed5 {
+		width: 48%;
+		margin-left: 2%;
+		margin-right: 50%;
+		margin-top: 130px;
+	}
+	#feed6 {
+		width: 78%;
+		margin-left: 11%;
+		margin-right: 11%;
+		margin-top: 120px;
+	}
+	#feed7 {
+		width: 46%;
+		margin-left: 50%;
+		margin-right: 4%;
+		margin-top: 115px;
+	}
+	#feed8 {
+		width: 30%;
+		margin-left: 11%;
+		margin-right: 59%;
+		margin-top: -85px;
+	}
+	#feed9 {
+		width: 45%;
+		margin-left: 55%;
+		margin-right: 0;
+		margin-top: -30%;
+	}
+	#feed10 {
+		width: 37%;
+		margin-left: 18%;
+		margin-right: 45%;
+		margin-bottom: 350px;
 	}
 }
+
+#about {
+	margin-top: 150px;
+	width: 52%;
+	margin-left: 24%;
+	margin-right: 24%;
+	p {
+		margin: 40px 0;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+#shop {
+	margin-top: 150px;
+	.cardcase-shop {
+		width: 30%;
+		margin-left: 35%;
+		margin-right: 35%;
+	}
+	.wallet-shop {
+		margin-top: 15px;
+		width: 30%;
+		margin-left: 35%;
+		margin-right: 35%;
+		// margin-bottom: 50px;
+	}
+}
+
+.product-container {
+	margin-top: 150px;
+	.product-photography {
+		width: 48%;
+		margin: 0 auto;
+		img {
+			vertical-align: middle;
+			cursor: -webkit-zoom-in; 
+			cursor: -moz-zoom-in;
+		}
+		.product-photo1 {
+			width: 100%;
+			margin-bottom: 6px;
+		}
+		.product-photo2, .product-photo3, .product-photo4 {
+			width: 28%;
+			float: left;
+			margin-right: 1.2%;
+		}
+		.product-photo5 {
+			width: 12.4%;
+			float: left;
+		}
+	}
+	.product-info {
+		position: absolute; 
+		top: 150px;
+		right: 50px;
+		width: 20%;
+		.product-title {
+			margin-bottom: 15px;
+		}
+		.product-price {
+			margin-bottom: 15px;
+		}
+		.product-description {
+			margin-bottom: 15px;
+		}
+		.product-details {
+			margin-bottom: 15px;
+		}
+		.product-dimensions {
+			margin-bottom: 45px;
+		}
+		.add-to-cart-button button {
+			font-family: "proxima-nova",sans-serif;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 1.1em;
+			width: 40%;
+			outline: 0;
+			background-color: #fff;
+			color: #000;
+			text-transform: uppercase;
+			padding: 6px;
+			border: 2px solid #000;
+			letter-spacing: 1px;
+			cursor: pointer;
+			float: right;
+			&:hover {
+				background-color: #000;
+				color: #fff;
+				border: 2px solid #000;
+			}
+		}
+	}
+}
+
+.xl-product-photo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: none;
+	background-color: #fff;
+	z-index: 100;
+	cursor: -webkit-zoom-out; 
+	cursor: -moz-zoom-out;
+	img {
+		width: 100%;
+	}
+}
+

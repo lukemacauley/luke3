@@ -1,0 +1,25 @@
+<header>
+	<ul class="center">
+		<li><%= link_to image_tag("lm_logo.svg", alt: "LUKE MACAULEY", class: "logo"), root_path %></li>
+	</ul>
+	<ul class="right">
+		<li><%= link_to "Cart: 0" %></li>
+	</ul>
+</header>
+
+<div id="sidebar">
+	<ul class="shop-menu-1">
+		<li>
+			<%= link_to "Shop", shop_path %>
+			<ul class="shop-menu-2">
+      	<li><%= link_to "Card Case", cardcase_path %></li>
+        <li><%= link_to "Wallet", wallet_path %></li>
+      </ul>
+		</li>
+		<li><%= link_to "Luke Macauley", about_path %>
+			<ul class="shop-menu-3">
+      	<li><%= link_to "Our Story", about_path %></li>
+      </ul>
+		</li>
+	</ul>
+</div>
