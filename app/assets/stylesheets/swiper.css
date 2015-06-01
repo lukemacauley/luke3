@@ -72,9 +72,9 @@ sizes, pagination, etc.
 ================================================================*/
 .swiper-container {
   /* Specify Swiper's Size: */
-
-  width:500px;
-  height: 300px;
+  margin-top: 200px;
+  width:200px;
+  height: 100px;
 }
 .swiper-slide {
   /* Specify Slides's Size: */
