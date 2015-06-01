@@ -443,7 +443,8 @@ footer {
 	margin-top: 150px;
 	.product-photography {
 		width: calc(100% - 20px);
-		margin: 385px 10px 0;
+		margin: 0px 10px 0;
+		margin-top: 400px;
 		img {
 			vertical-align: middle;
 			cursor: -webkit-zoom-in; 
@@ -475,7 +476,7 @@ footer {
 			display: none;
 		}
 		.product-title {
-			margin-bottom: 0px;
+			// margin-bottom: 0px;
 		}
 		.product-price {
 			margin-bottom: 15px;
