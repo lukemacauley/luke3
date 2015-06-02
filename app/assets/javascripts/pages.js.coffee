@@ -22,5 +22,13 @@ ready = ->
   $(".xl-product-photo img").click ->
     $(".xl-product-photo").hide()
 
+  $(".menu").click ->
+  	$(".mobile_nav, .mobile_nav_links").show()
+  	$(".menu").hide()
+
+  $(".close, .mobile-nav-exit").click ->
+  	$(".mobile_nav").hide()
+  	$(".menu").show()
+
 $(document).ready(ready)
 $(document).on('page:load', ready)
