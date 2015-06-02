@@ -11,6 +11,21 @@ class PagesController < ApplicationController
   def wallet
   end
 
+  def contact
+  end
+
+  def subscribe
+  end
+
+  def delivery
+  end
+
+  def returns
+  end
+
+  def legal
+  end
+
   def cardcase
   end
 end

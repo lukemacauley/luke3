@@ -10,6 +10,12 @@ Rails.application.routes.draw do
   get "wallet" => "pages#wallet"
   get "cardcase" => "pages#cardcase"
   get "shop" => "pages#shop"
+  get "contact" => "pages#contact"
+  get "delivery" => "pages#delivery"
+  get "returns" => "pages#returns"
+  get "legal" => "pages#legal"
+  get "subscribe" => "pages#subscribe"
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
