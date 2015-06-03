@@ -26,9 +26,12 @@ ready = ->
   	$(".mobile_nav, .mobile_nav_links").show()
   	$(".menu").hide()
 
-  $(".close, .mobile-nav-exit").click ->
-  	$(".mobile_nav").hide()
-  	$(".menu").show()
+  $(".close, .exit").click ->
+  	$(".mobile_nav, .follow-overlay").hide()
+  	$(".menu").show() if $(window).width() < 1024
+
+  $(".follow-us-link").click ->
+    $(".follow-overlay").show()
 
 $(document).ready(ready)
 $(document).on('page:load', ready)

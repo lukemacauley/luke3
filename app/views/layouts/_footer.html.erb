@@ -1,10 +1,19 @@
 <footer>
 	<ul class="center">
 		<li><%= link_to "Contact", contact_path %></li>
-		<li><%= link_to "Subscribe", subscribe_path %></li>
+		<!-- <li><%# link_to "Subscribe", subscribe_path %></li> -->
 		<li><%= link_to "Delivery", delivery_path %></li>
 		<li><%= link_to "Returns", returns_path %></li>
 		<li><%= link_to "Legal", legal_path %></li>
-		<li><%= link_to "Social", 'javascript:void(0)' %></li>
+		<li><%= link_to "Follow Us", 'javascript:void(0)', class: "follow-us-link" %></li>
 	</ul>
 </footer>
+
+<div class="follow-overlay">
+	<%= link_to image_tag("cross.svg", class: "exit"), "javascript:void(0)" %>
+	<ul>
+		<li><%= link_to "Facebook", "http://www.facebook.com/lukemacauley", target: "_blank", class: "mobile_nav_links" %></li>
+		<li><%= link_to "Twitter", "http://www.twitter.com/lukemacauley", target: "_blank", class: "mobile_nav_links" %></li>
+		<li><%= link_to "Instagram", "http://www.instagram.com/lukemacauley", target: "_blank", class: "mobile_nav_links" %></li>
+	</ul>
+</div>
