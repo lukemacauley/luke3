@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'pages#home'
 
-  get "about" => "pages#about"
+  get "our-story" => "pages#ourstory", as: 'ourstory'
+  # get "about" => "pages#about"
   get "wallet" => "pages#wallet"
   get "cardcase" => "pages#cardcase"
   get "shop" => "pages#shop"
